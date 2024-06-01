@@ -1,0 +1,533 @@
+/*  基础设置 */
+.container{
+    /*  这个就是表示版心 */
+    width: 1190px;
+    margin: 0 auto;
+}
+/*  #region 顶部导航条开始 */
+
+.topbar{
+    height: 30px;
+    background-color: #ECECEC;
+}
+.welcome{
+    height: 30px;
+    line-height: 30px;
+    font-size: 0;
+}
+.welcome span , .welcome a{
+    font-size: 20px;
+    color: #666;
+}
+.welcome .hello{
+    margin-right: 28px;
+}
+.welcome .login{
+    padding-right: 10px;
+    border-right: 1px #666 solid;
+}
+.welcome .register{
+    padding-left: 10px;
+}
+.topbar-nav .list li{
+    float: left;
+    /* padding: 0 15px; */
+}
+.topbar-nav .list a{
+    padding: 0 15px 0 15px;
+    border-right: 1px #666 solid;
+}
+.topbar-nav .list li:first-child a {
+    padding-left: 0;
+
+}
+
+.topbar-nav .list li:last-child a {
+    padding-right: 0;
+    border: 0;
+}
+.topbar-nav {
+    height: 30px;
+    line-height: 30px;
+}
+/*  #endregion顶部导航条结束 */
+
+/*  #region头部 */
+.page-header{
+  /*  注意头部不用给一个宽度,由于不是一个版型 */
+    height: 120px;
+    margin: 0 auto;
+
+    font-size: 0;
+}
+.page-header .search form {
+    margin-top :42px;
+}
+.page-header .search input{
+    width: 510px;
+    height: 34px;
+    border: 1px solid #DD302D;
+}
+.page-header .search button{
+    width: 80px;
+    height: 36px;
+    background-color: #DD302D;
+    /*  改变基线对齐的特点,其实就是把图片关于底部对齐
+    而不是关于基线对齐 */
+    vertical-align: top;
+    background-image: url("../../images/serch_icon.png");
+    background-repeat: no-repeat;
+    /*  表示调整背景的位置 */
+    background-position: 28px 6px;
+}
+/*  #endregion头部结束 */
+
+/*  #region 主要的导航区 */
+.main-nav{
+    height: 48px;
+ 
+    border-bottom: 1px #DD302D solid;
+}
+.main-nav .sort-branner {
+    width: 190px;
+    height: 48px;
+    background-color: #DD302D;
+
+}
+.main-nav .sort-branner .sort-mes {
+    width: 96px;
+    height: 23px;
+    line-height: 23px;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 13px;
+}
+.main-nav-nav{
+    line-height: 48px;
+    line-height: 48px;
+}
+.main-nav-nav .nav-mes-a li {
+    float: left;
+}
+.main-nav-nav .nav-mes-a a {
+    color: #333333;
+    font-size: 16px;
+    padding: 0 20px;
+}
+.main-nav-nav .nav-mes-a li:first-child a{
+    padding-left: 10px;
+}
+
+.main-nav-nav .nav-mes-a li:last-child a{
+    padding-right: 0;
+}
+
+/* #endregion 主导航区结束 */
+
+/*  #region 主要内容区 */
+/*  #region 侧边导航栏 */
+.main-content{
+    margin-top: 10px;
+}
+.main-content .slide-nav{
+    width: 190px;
+    height: 458px;
+    background-color: #F4F4F4 ;
+}
+.main-content .banner{
+    width: 690px;
+    height: 458px;
+    background-color: green;
+    margin: 0 10px;
+}
+
+.main-content .slide-other{
+    width: 290px;
+    height: 458px;
+   
+}
+.main-content ul{
+    position: relative;
+}
+.main-content li{
+   font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 16px;
+
+}
+.main-content li:first-child>a {
+    color: #DD302D;
+    margin-top: 9px;
+}
+.main-content .slide-nav li:hover{
+    background-color: #DD302D;
+}
+/* 注意 hover 标签的设置方式就是 */
+.main-content .slide-nav li:hover > a{
+    /*  注意所有的 a 标签和特定的 a 标签有区别 */
+    background-color: #DD302D;
+    color: white;
+} 
+/* #endregion 侧边导航栏结束 */
+
+/* #region 二级菜单 */
+.main-content .slide-nav li:hover .second-menu {
+    display: block;
+}
+.second-menu{
+    width: 680px;
+    height: 458px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 190px;
+    /*  其实就是计算内容需要计算 padding */
+    padding-left: 20px;
+    display: none;
+}
+
+.second-menu dt{
+    float: left;
+    width: 70px;
+   margin-right: 10px;
+    font-weight: bold;
+}
+
+.second-menu dt a {
+    color: #666;
+}
+.second-menu dd{
+    float: left;
+    
+}
+
+.second-menu dd a{
+    padding: 0 10px;
+    border-left: 1px #666 solid;
+    color: #666;
+}
+.second-menu dl{
+    height: 36px;
+    line-height: 36px;
+}
+
+/* #endregion 二级菜单结束 */
+
+/* #region 其他信息 */
+.slide-other .right-mes{
+    width: 260px;
+    height: 158px;
+    margin-bottom: 10px;
+    padding: 0 14px;
+    border: 1px solid #D9D9D9;
+}
+
+.slide-other .right-mes .title{
+    height: 38px;
+    line-height: 39px;
+    border-bottom: 1px solid #D9D9D9;
+}
+.slide-other .right-nav{
+    width: 290px;
+    height: 290px;
+    /* background-color: skyblue; */
+    overflow: hidden;
+
+}
+
+.slide-other .msg-list .msg li {
+    font-size: 12px;
+    color: #666;
+    height: 26px;
+    line-height: 26px;
+}
+
+.slide-other .msg-list .msg:first-child li {
+    margin-top: 1px;
+}
+/* #endregion 其他信息结束 */
+/* #region 下面的导航栏 */
+.right-nav .other-nav-list li {
+    padding-left: 0;
+    width: 48px;
+    height: 70px;
+    /* background-color: green; */
+    margin: 0 11px;
+    float: left;
+    text-align: center;
+    
+}
+/*  下面就是精灵图的利用 */
+.right-nav .other-nav-list li:first-child{
+    margin-left: 16px;
+}
+
+
+.right-nav .other-nav-list:first-child {
+    margin-top: 16px;
+}
+
+.other-nav-list:nth-child(2) {
+    margin: 17px 0;
+}
+.other-nav-list .picture{
+    background-image: url(../../images/精灵图-侧边功能.png);
+    width: 48px;
+    height: 48px;
+}
+.other-nav-list:nth-child(1) li:nth-child(1) .picture{
+    background-position: 0 0;
+}
+.other-nav-list:nth-child(1) li:nth-child(2) .picture{
+    background-position: -48px 0;
+}
+.other-nav-list:nth-child(1) li:nth-child(3) .picture{
+    background-position: -96px 0;
+}
+.other-nav-list:nth-child(1) li:nth-child(4) .picture{
+    background-position: -144px 0;
+}
+
+.other-nav-list:nth-child(2) li:nth-child(1) .picture{
+    background-position: 0 -48px;
+}
+.other-nav-list:nth-child(2) li:nth-child(2) .picture{
+    background-position: -48px -48px;
+}
+.other-nav-list:nth-child(2) li:nth-child(3) .picture{
+    background-position: -96px -48px;
+}
+.other-nav-list:nth-child(2) li:nth-child(4) .picture{
+    background-position: -144px -48px;
+}
+
+.other-nav-list:nth-child(3) li:nth-child(1) .picture{
+    background-position: 0 -96px;
+}
+.other-nav-list:nth-child(3) li:nth-child(2) .picture{
+    background-position: -48px -96px;
+}
+.other-nav-list:nth-child(3) li:nth-child(3) .picture{
+    background-position: -96px -96px;
+}
+.other-nav-list:nth-child(3) li:nth-child(4) .picture{
+    background-position: -144px -96px;
+}
+/* #endregion 下面的导航栏 */
+
+/*  #endregion 主要内容区结束 */
+
+/*  #region秒杀区 */
+.real-banner{
+    height: 190px;
+    margin-top: 10px;
+}
+.real-banner img{
+    margin: 0 5px;
+}
+.real-banner img:first-child{
+    margin-left: 0;
+}
+.real-banner img:last-child{
+    margin-right: 0;
+}
+.real-banner img:nth-child(3) {
+    margin-right: 9px;
+}
+/* #endregion秒杀区结束 */
+
+/* #region 楼层顶部 */
+.floor-topbar{
+    margin-top: 48px;
+    /* background-color: pink; */
+    height: 30px;
+    /* margin-bottom: 5px; */
+    line-height: 30px;
+}
+.floor-topbar .elem1{
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+    
+}
+.floor-banner{
+    height: 432px;
+    background-color: orange;
+}
+.elem-list li {
+    float: left;
+}
+.elem-list li a {
+    padding: 0 10px;
+    font-size: 16px;
+    color: #666;
+    border-right: 1px #666 solid;
+}
+.elem-list li:last-child a{
+    border-right: 0;
+}
+.elem-list li:first-child a{
+    color: #DD302D;
+    font-weight: bold;
+
+}
+/* #endregion 楼层底部 */
+/* #region 楼层底部商品区域 */
+.floor-banner{
+    margin-top: 4px;
+    border-top: 2px #DD302D solid;
+    background-color: white;
+}
+.floor-banner .left-branner{
+    width: 230px;
+    height: 432px;
+    background-color: white;
+}
+.floor-banner .left-branner-mes{
+    width: 190px;
+    height: 108px;
+    font-size: 16px;
+    color: #666;
+    margin: 20px 20px 30px 20px;
+}
+.floor-banner .left-branner-mes li{
+    float: left;
+    width: 90px;
+    height: 22px;
+    padding-bottom: 3.5px;
+    border-bottom: #D9D9D9 1.1px solid;
+    text-align: center;
+
+}
+.floor-banner .left-branner-mes li:first-child{
+    margin-right: 10px;
+}
+
+.floor-banner .left-branner-mes li:nth-child(3){
+    margin-right: 10px;
+}
+.floor-banner .left-branner-mes li:nth-child(5){
+    margin-right: 10px;
+}
+.floor-banner .left-branner img{
+    margin: 0 18px 31px 18px;
+}
+.floor-banner .right-fir-banner{
+    width: 206px;
+    height: 432px;
+}
+.floor-banner .right-fir-banner img:first-child{
+    border-right: 1px #E2E2E2 solid;
+    border-bottom: 1px #E2E2E2 solid;
+}
+.floor-banner .right-fir-banner img:last-child{
+    border: 1px #E2E2E2 solid;
+    border-left: 0;
+}
+.floor-banner .middle-pic{
+    border: 1px #E2E2E2 solid;
+    border-top: 0;
+}
+.right-las-banner{
+    width: 206px;
+    height: 432px;
+}
+.right-las-banner img:first-child{
+    border: 1px #E2E2E2 solid;
+    border-top: 0;
+}
+
+.right-las-banner img:last-child{
+    border: 1px #E2E2E2 solid;
+}
+/* #endregion 楼层底部商品区结束 */
+
+/*  #region 页脚 */
+.foot{
+    background-color: #483E3E;
+}
+.foot .up-foot{
+    height: 246px;
+    background-color: #483E3E;
+    border-bottom: 1px #584D4D  solid;
+    padding-top: 48px;
+}
+.foot .down-foot{
+    background-color: #483E3E;
+    height: 193px;
+}
+.foot .up-foot div {
+    font-size: 14px;
+    color: #FFFFFF;
+    float: left;
+    width: 190px;
+}
+.foot .up-foot div:nth-child(1) {
+    margin-right: 11px;
+    height: 176px;
+}
+.foot .up-foot div:nth-child(2) {
+    margin-right: 9px;
+    height: 128px;
+}
+
+.foot .up-foot div:nth-child(3) {
+    margin-right: 10px;
+    height: 128px;
+}
+
+.foot .up-foot div:nth-child(4) {
+    margin-right: 14px;
+    height: 152px;
+}
+.foot .up-foot div:nth-child(5) {
+    margin-right: 6px;
+    height: 176px;
+}
+
+.foot .up-foot div:nth-child(6) {
+    height: 152px;
+}
+
+.down-foot {
+    padding: 47px 0 100px 0;
+    text-align: center;
+   
+}
+
+.down-foot .down-foot-mes li a {
+    color: #FFF;
+    padding: 0 20px;
+    border-right: 1px solid white;
+}
+
+.down-foot .down-foot-mes li a:last-child{
+    border-right: 0;
+}
+.down-foot .down-foot-mes li {
+    float: left;
+
+}
+.down-foot .down-foot-mes {
+    width: 957px;
+    height: 16px;
+    display: inline-block;
+}
+
+.copyright{
+    color: #FFF;
+}
+/*  注意可使用 div 来模拟一个 划分线 */
+/*  注意给了宽度之后,就可以进行水平居中: 
+    margin: 0 auto : 前提是块元素并且给了宽度
+    text-align: 0; 必须是行内元素或者行内块元素 
+
+    */
+/* #endregion 页脚结束 */
+
+
+
+
+  
